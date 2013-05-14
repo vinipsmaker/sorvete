@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="60cm" height="39cm" viewBox="-87 -90 1194 763" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="-86" y="138" width="349" height="341.75"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-86" y="138" width="349" height="341.75"/>
+    <rect style="fill: #ffffff" x="-86" y="118" width="50.2" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-86" y="118" width="50.2" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-84" y="132">Client</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-68.1" y="180.1" width="233.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-68.1" y="180.1" width="233.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="48.55" y="200.1">Client_Proxy</text>
+    <rect style="fill: #ffffff" x="-68.1" y="208.1" width="233.3" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-68.1" y="208.1" width="233.3" height="8"/>
+    <rect style="fill: #ffffff" x="-68.1" y="216.1" width="233.3" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-68.1" y="216.1" width="233.3" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-65.1" y="229.3">+register_function(function:)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-65.1" y="245.3">+remotely_call(context)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-65.1" y="261.3">+local_call()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-65.1" y="277.3">+ping()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-65.1" y="293.3">+update_wrappers()</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-49.1" y="376.1" width="194.8" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-49.1" y="376.1" width="194.8" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="48.3" y="396.1">Client_Proﬁler</text>
+    <rect style="fill: #ffffff" x="-49.1" y="404.1" width="194.8" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-49.1" y="404.1" width="194.8" height="8"/>
+    <rect style="fill: #ffffff" x="-49.1" y="412.1" width="194.8" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-49.1" y="412.1" width="194.8" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-46.1" y="425.3">+log_exec()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-46.1" y="441.3">+log_rtt()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-46.1" y="457.3">+update_proﬁler_server()</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="508" y="138.75" width="399" height="342"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="508" y="138.75" width="399" height="342"/>
+    <rect style="fill: #ffffff" x="508" y="118.75" width="50.2" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="508" y="118.75" width="50.2" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="510" y="132.75">Server</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="546" y="172" width="233.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="546" y="172" width="233.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="662.65" y="192">Server_Proxy</text>
+    <rect style="fill: #ffffff" x="546" y="200" width="233.3" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="546" y="200" width="233.3" height="8"/>
+    <rect style="fill: #ffffff" x="546" y="208" width="233.3" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="546" y="208" width="233.3" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="549" y="221.2">+local_call()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="549" y="237.2">+register_function(function:)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="549" y="253.2">+pong()</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="710" y="414" width="132" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="710" y="414" width="132" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="776" y="434">Server_Proﬁler</text>
+    <rect style="fill: #ffffff" x="710" y="442" width="132" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="710" y="442" width="132" height="8"/>
+    <rect style="fill: #ffffff" x="710" y="450" width="132" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="710" y="450" width="132" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="713" y="463.2">+log_exec()</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="523" y="296" width="187.1" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="523" y="296" width="187.1" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="616.55" y="316">Server_Solver</text>
+    <rect style="fill: #ffffff" x="523" y="324" width="187.1" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="523" y="324" width="187.1" height="8"/>
+    <rect style="fill: #ffffff" x="523" y="332" width="187.1" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="523" y="332" width="187.1" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="526" y="345.2">+update_call_location()</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="166.186" y1="235.483" x2="538.314" y2="220.88"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="525.872,226.372 541.664,220.748 525.48,216.379 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="355.6" y="224.05">{}</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="521.998" y1="316.898" x2="171.886" y2="290.602"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="184.873,286.563 168.543,290.351 184.124,296.535 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="343.598" y="299.5">{}</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="48.4653" y1="301.107" x2="48.3718" y2="368.389"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="43.3894,355.735 48.3672,371.742 53.3894,355.749 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="48.4138" y="334.1">{}</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="146.691" y1="423.061" x2="702.308" y2="439.782"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="689.516,444.4 705.66,439.883 689.817,434.404 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="427.85" y="427.522">{}</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="616.55" y1="352" x2="704.413" y2="410.293"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="691.11,407.467 707.206,412.147 696.638,399.135 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="663.274" y="379">{}</text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" x1="779.3" y1="260" x2="776.647" y2="406.303"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="771.877,393.567 776.586,409.655 781.876,393.748 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="777.96" y="332.526">{}</text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-81,-88.25 479.4,-88.25 491.4,-76.25 491.4,73.75 -81,73.75 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-81,-88.25 479.4,-88.25 491.4,-76.25 491.4,73.75 -81,73.75 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="479.4,-88.25 479.4,-76.25 491.4,-76.25 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-74" y="-64.6">
+      <tspan x="-74" y="-64.6">Profiler:</tspan>
+      <tspan x="-74" y="-48.6">* Execução local</tspan>
+      <tspan x="-74" y="-32.6">** Tempo gasto (usado como medida para mensurar energia gasta)</tspan>
+      <tspan x="-74" y="-16.6">* Execução remota</tspan>
+      <tspan x="-74" y="-0.6">** Tempo para execução (fator limitante para o programa não ficar lento)</tspan>
+      <tspan x="-74" y="15.4">** Tamanho da mensagem de contexto serializada</tspan>
+      <tspan x="-74" y="31.4">* Gargalo de rede (RTT)</tspan>
+      <tspan x="-74" y="47.4">* Método é remotável (pode ser omitido)?</tspan>
+      <tspan x="-74" y="63.4"></tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="556,-80.75 1093.3,-80.75 1105.3,-68.75 1105.3,-14.75 556,-14.75 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="556,-80.75 1093.3,-80.75 1105.3,-68.75 1105.3,-14.75 556,-14.75 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="1093.3,-80.75 1093.3,-68.75 1105.3,-68.75 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="563" y="-57.1">
+      <tspan x="563" y="-57.1">Solver_Cliente *NÃO* executa o solver.</tspan>
+      <tspan x="563" y="-41.1"> </tspan>
+      <tspan x="563" y="-25.1">O Solver_Cliente só armazena cache dos resultados do Solver_Servidor </tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-86,526.25 320.4,526.25 332.4,538.25 332.4,672.25 -86,672.25 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-86,526.25 320.4,526.25 332.4,538.25 332.4,672.25 -86,672.25 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="320.4,526.25 320.4,538.25 332.4,538.25 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-79" y="549.9">
+      <tspan x="-79" y="549.9"># NOTA para o Vinícius </tspan>
+      <tspan x="-79" y="565.9"></tspan>
+      <tspan x="-79" y="581.9">Solver_Servidor::update_call_localtion *NÃO* decide:</tspan>
+      <tspan x="-79" y="597.9">* onde as chamadas acontecem (call)</tspan>
+      <tspan x="-79" y="613.9">* quem faz as chamadas (caller) </tspan>
+      <tspan x="-79" y="629.9"></tspan>
+      <tspan x="-79" y="645.9">Decide:</tspan>
+      <tspan x="-79" y="661.9">* quem será chamado (calle)</tspan>
+    </text>
+  </g>
+</svg>
