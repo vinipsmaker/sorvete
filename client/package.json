@@ -5,7 +5,8 @@
   "homepage": "https://github.com/vinipsmaker/sorvete",
   "main": "www/main.js",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "prepublish": "grunt get_deps"
   },
   "author": [
     {
@@ -21,7 +22,9 @@
     "javascript"
   ],
   "dependencies": {
-    "yaap": "~0.1.0"
+    "yaap": "~0.1.0",
+    "jquery": "~2.0.0",
+    "underscore": "~1.4.4"
   },
   "devDependencies": {
     "cordova": "~2.6.2",
@@ -33,7 +36,7 @@
     "grunt-contrib-uglify": "~0.2.0",
     "grunt-contrib-watch": "~0.4.0",
     "grunt-linter": "~0.3.2",
-    "yaap": "~0.1.0"
+    "grunt-bower-task": "~0.2.3"
   },
   "contributors": [
     {
