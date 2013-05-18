@@ -68,7 +68,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-bower-task');
 
 	// Default task
-	grunt.registerTask('default', ['linter','get_deps','uglify','jasmine']);
+	grunt.registerTask('default', ['linter','uglify','jasmine']);
 
 	// Custom tasks
 	grunt.registerTask('test', ['linter','jasmine']);
