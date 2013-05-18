@@ -22,9 +22,9 @@
     "javascript"
   ],
   "dependencies": {
-    "yaap": "~0.1.0",
+    "yaap": "latest",
     "jquery": "latest",
-    "underscore": "~1.4.4"
+    "underscore": "latest"
   },
   "devDependencies": {
     "cordova": "~2.6.2",
