@@ -100,10 +100,27 @@ Para executar os testes, basta executar o comando:
 grunt jasmine
 ```
 
+Instalando as bibliotecas de terceiros
+=========================================================
+
+Esta sendo usado o [**grunt-bower-task**][site_grunt_bower_task] para resolver e baixar os pacotes que a aplicação possa precisar. Para fazer isso, basta executar o comando:
+
+```shell
+grunt get_deps
+```
+
+Mas, isso já esta integrado com o **npm**, então não precisa executar essa tarefa se você já executou no começo:
+
+```shell
+npm install
+```
+
 [site_jasmine]: http://pivotal.github.io/jasmine/ "Link para o site do jasmine BDD/TDD"
 [site_linter]: https://github.com/circusbred/grunt-linter "Link para o grunt-linter"
 [site_jshint]: http://www.jshint.com/ "Site da ferramenta de qualidade de codigo JSHint"
 [site_grunt]: http://gruntjs.com/ "Site da ferramente de build"
 [site_cordova]: http://cordova.apache.org "Site do Cordova"
 [site_cordova_cli]: https://github.com/apache/cordova-cli "Site do cordova-cli"
+[site_grunt_bower_task]: https://github.com/yatskevich/grunt-bower-task "Site do plugin do grunt para usar o bower"
+[site_bower]: https://github.com/bower/bower "Site do bower"
 
