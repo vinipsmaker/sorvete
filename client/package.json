@@ -24,6 +24,7 @@
   "dependencies": {
     "yaap": "latest",
     "jquery": "latest",
+    "requirejs": "latest",
     "underscore": "latest"
   },
   "devDependencies": {

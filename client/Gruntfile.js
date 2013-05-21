@@ -30,9 +30,11 @@ module.exports = function(grunt) {
 		tasks: 'test'
 	},
 	jasmine: {
-		src: [ 'www/**/*.js', '!www/js/spec/**/*.spec.js',
-			'!www/js/thirdparty/**/test/**/*.js',
-			'!www/js/thirdparty/**/tests/**/*.js'],
+		src: [ 'www/**/*.js', '!www/**/*.spec.js',
+			'!www/**/spec/**/*.js',
+			'!www/**/specs/**/*.js',
+			'!www/**/test/**/*.js',
+			'!www/**/tests/**/*.js'],
 		options: {
 			specs : 'www/js/spec/**/*.spec.js'
 		}
@@ -50,7 +52,7 @@ module.exports = function(grunt) {
 	bower: {
 		install: {
 			options: {
-				targetDir: './www/js/thirdparty/',
+				targetDir: './www/thirdparty/',
 				layout: 'byType',
 				install: true,
 				verbose: false,
