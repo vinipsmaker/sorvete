@@ -15,14 +15,19 @@ module.exports = function(grunt) {
 	linter: {
 		files: [ 'Gruntfile.js', 'package.json',
 			'www/js/**/*.js', 'www/js/spec/**/*.js',
-			'!www/js/thirdparty/**/*.js', '!www/js/**/*.min.js'
+			'!www/thirdparty/**/*.js', '!www/js/**/*.min.js'
 		],
 		globals: {
 			jQuery: true,
 			$: true,
 			describe: true,
 			it: true,
-			expect: true
+			xdescribe: true,
+			xit: true,
+			expect: true,
+			define: true,
+			require: true,
+			requirejs: true
 		}
 	},
 	watch: {
@@ -30,12 +35,9 @@ module.exports = function(grunt) {
 		tasks: 'test'
 	},
 	jasmine: {
-		src: [ 'www/**/*.js', '!www/**/*.spec.js',
-			'!www/**/spec/**/*.js',
-			'!www/**/specs/**/*.js',
-			'!www/**/test/**/*.js',
-			'!www/**/tests/**/*.js'],
+		src: [ 'www/thirdparty/require.js', '!www/js/spec/**/*.spec.js' ],
 		options: {
+			template: require('grunt-template-jasmine-requirejs'),
 			specs : 'www/js/spec/**/*.spec.js'
 		}
 	},
@@ -48,43 +50,55 @@ module.exports = function(grunt) {
 				'www/js/<%= pkg.name %>.min.js': [ 'www/js/sorvete/**/*.js' ]
 			}
 		}
-	},
-	bower: {
-		install: {
+	},requirejs: {
+		compile: {
 			options: {
-				targetDir: './www/thirdparty/',
-				layout: 'byType',
-				install: true,
-				verbose: false,
-				cleanTargetDir: true,
-				cleanBowerDir: true
+				baseUrl: ".",
+				name: "www/js/sorvete/sorvete.js",
+//				mainConfigFile: "www/js/sorvete/sorvete.js",
+				out: 'www/js/sorvete/sorvete.min.js',
+				optimize: "uglify2"
 			}
+		}
+	},shell: {
+		options: {
+			failOnError: true,
+			stdout: true
+		},
+		debug_ios: {
+			command: 'cordova build ios && cordova emulate ios'
+		},
+		debug_android: {
+			command: 'cordova build android && cordova emulate android'
+		},
+		debug_blackberry: {
+			command: 'cordova build blackberry && cordova emulate blackberry'
 		}
 	}
 	});
 
+	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-jasmine');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-watch');
+//	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-linter');
-	grunt.loadNpmTasks('grunt-bower-task');
+	grunt.loadNpmTasks('grunt-shell');
+	grunt.loadNpmTasks('grunt-volo');
 
 	// Default task
-	grunt.registerTask('default', ['linter','uglify','jasmine']);
+	grunt.registerTask('default', ['test_syntax','min_code','test_tdd']);
 
 	// Custom tasks
-	grunt.registerTask('test', ['linter','jasmine']);
+	grunt.registerTask('test', ['test_syntax','test_tdd']);
+
+	grunt.registerTask('debug:ios', ['test_syntax','test_tdd','min_code','shell:debug_ios']);
+	grunt.registerTask('debug:android', ['test_syntax','test_tdd','min_code','shell:debug_android']);
+	grunt.registerTask('debug:blackberry', ['test_syntax','test_tdd','min_code','shell:debug_blackberry']);
 
 	// Resolve and get deps.
-	grunt.registerTask('get_deps', ['generate_bower_from_json','bower','delete_bower_config']);
+	grunt.registerTask('get_deps', ['volo:install']);
 
-	grunt.registerTask('generate_bower_from_json', 'Generate bower files from \"package.json\"', function() {
-		var pkg=grunt.file.readJSON('package.json');
-		grunt.file.write('bower.json', '{\n\t"dependencies":'+JSON.stringify(pkg.dependencies)+'\n}\n');
-	});
-
-	grunt.registerTask('delete_bower_config', 'Delete bower config file', function() {
-		grunt.file.delete('bower.json');
-	});
+	grunt.registerTask('test_syntax', ['linter']);
+	grunt.registerTask('test_tdd', ['jasmine']);
+	grunt.registerTask('min_code', ['requirejs']);
 };
 

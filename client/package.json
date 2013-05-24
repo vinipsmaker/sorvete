@@ -21,23 +21,29 @@
     "economia",
     "javascript"
   ],
-  "dependencies": {
-    "yaap": "latest",
-    "jquery": "latest",
-    "requirejs": "latest",
-    "underscore": "latest"
+  "volo": {
+    "baseDir": "www/thirdparty",
+    "dependencies": {
+      "yaap": "github:warmuuh/yaap/master",
+      "jquery": "github:jquery/jquery/master",
+      "require": "github:jrburke/requirejs/master",
+      "underscore": "github:documentcloud/underscore/master"
+    }
   },
   "devDependencies": {
-    "cordova": "~2.6.2",
-    "temporary": "0.0.5",
-    "grunt-shell": "~0.2.2",
-    "grunt": "~0.4.1",
-    "grunt-cli": "~0.1.8",
-    "grunt-contrib-jasmine": "~0.4.2",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-watch": "~0.4.0",
-    "grunt-linter": "~0.3.2",
-    "grunt-bower-task": "~0.2.3"
+    "cordova": "*",
+    "temporary": "*",
+    "grunt-shell": "*",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-jasmine": "*",
+    "grunt-template-jasmine-requirejs": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-requirejs": "*",
+    "grunt-linter": "*",
+    "volo": "*",
+    "grunt-volo": "*"
   },
   "contributors": [
     {

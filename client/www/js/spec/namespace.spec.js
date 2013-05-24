@@ -1,11 +1,44 @@
-/*global sorvete:false*/
+require.config({
+	"baseUrl": "www/",
+	"paths": {
+		"jquery": "thirdparty/jquery",
+		"underscore": "thirdparty/underscore",
+		"Sorvete": "js/sorvete/sorvete"
+	},
+	shim: {
+		'underscore': {
+			exports: '_'
+		}
+	}
+});
+
+describe("A false case", function() {
+	it("canot be true", function() {
+		expect(true).toBe(false);
+	});
+});
+
+require(["Sorvete"],
+function (Sorvete) {
+//require(function () {
+//require( function () {
+
+//var Sorvete=require("Sorvete");
+console.log("OPA");
 
 describe("Testes do namespace", function() {
-	it("Tem que ter um namespace chamado sorvete", function() {
-		expect(sorvete).not.toBe(undefined);
+	it("Tem que poder contruir o objeto", function() {
+//		expect(new Sorvete() ).not.toBe(undefined);
 	});
-	it("Tem que ter um namespace chamado sorvete.client", function() {
-		expect(sorvete.client).not.toBe(undefined);
+});
+
+describe("Testes 2", function() {
+	it("Sera que vai", function() {
+		expect( true ).toBe(true);
 	});
+});
+
+console.log("SAIU OPA");
+
 });
 
