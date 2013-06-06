@@ -86,7 +86,7 @@ O [**grunt-linter**][site_linter] pode usar alguns validadores, mas o [**jshint*
 Para executar o teste, basta executar o comando:
 
 ```shell
-grunt linter
+grunt test_syntax
 ```
 
 Executando testes de TDD/BDD
@@ -97,13 +97,13 @@ O **grunt** já esta configurado com testes automatizados usando o **jasmine** u
 Para executar os testes, basta executar o comando:
 
 ```shell
-grunt jasmine
+grunt test_tdd
 ```
 
 Instalando as bibliotecas de terceiros
 =========================================================
 
-Esta sendo usado o [**grunt-bower-task**][site_grunt_bower_task] para resolver e baixar os pacotes que a aplicação possa precisar. Para fazer isso, basta executar o comando:
+Esta sendo usado o [**grunt-volo**][site_grunt_volo] para resolver e baixar os pacotes que a aplicação possa precisar. Para fazer isso, basta executar o comando:
 
 ```shell
 grunt get_deps
@@ -121,6 +121,5 @@ npm install
 [site_grunt]: http://gruntjs.com/ "Site da ferramente de build"
 [site_cordova]: http://cordova.apache.org "Site do Cordova"
 [site_cordova_cli]: https://github.com/apache/cordova-cli "Site do cordova-cli"
-[site_grunt_bower_task]: https://github.com/yatskevich/grunt-bower-task "Site do plugin do grunt para usar o bower"
-[site_bower]: https://github.com/bower/bower "Site do bower"
+[site_grunt_volo]: https://github.com/volojs/grunt-volo "Site do plugin do grunt para usar o volo"
 

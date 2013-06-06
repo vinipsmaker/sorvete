@@ -46,15 +46,24 @@ module.exports = function(grunt) {
 	} 
 	});
 
+	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-jasmine');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-linter');
+	grunt.loadNpmTasks('grunt-volo');
 
 	// Default task
-	grunt.registerTask('default', ['linter','uglify','jasmine']);
+	grunt.registerTask('default', ['test_syntax','min_code','test_tdd']);
 
 	// Custom tasks
-	grunt.registerTask('test', ['linter','jasmine']);
+	grunt.registerTask('test', ['test_syntax','test_tdd']);
+
+	// Resolve and get deps.
+	grunt.registerTask('get_deps', ['volo:install']);
+
+	grunt.registerTask('test_syntax', ['linter']);
+	grunt.registerTask('test_tdd', ['jasmine']);
+	grunt.registerTask('min_code', ['requirejs']);
 };
 

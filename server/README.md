@@ -62,7 +62,7 @@ O [**grunt-linter**][site_linter] pode usar alguns validadores, mas o [**jshint*
 Para executar o teste, basta executar o comando:
 
 ```shell
-grunt linter
+grunt test_syntax
 ```
 
 Executando testes de TDD/BDD
