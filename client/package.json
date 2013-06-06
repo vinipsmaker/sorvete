@@ -25,7 +25,7 @@
     "baseDir": "www/thirdparty",
     "dependencies": {
       "yaap": "github:warmuuh/yaap/master",
-      "jquery": "github:jquery/jquery/master",
+      "jquery": "github:jquery/jquery/2.0.2",
       "require": "github:jrburke/requirejs/master",
       "underscore": "github:documentcloud/underscore/master"
     }

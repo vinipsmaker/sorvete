@@ -15,7 +15,8 @@ module.exports = function(grunt) {
 	linter: {
 		files: [ 'Gruntfile.js', 'package.json',
 			'www/js/**/*.js', 'www/js/spec/**/*.js',
-			'!www/thirdparty/**/*.js', '!www/js/**/*.min.js'
+			'!www/thirdparty/**/*.js', '!www/js/**/*.min.js',
+			'!www/thirdparty/'
 		],
 		globals: {
 			jQuery: true,
