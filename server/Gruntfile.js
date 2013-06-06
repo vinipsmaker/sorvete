@@ -21,7 +21,12 @@ module.exports = function(grunt) {
 			$: true,
 			describe: true,
 			it: true,
-			expect: true
+			xdescribe: true,
+			xit: true,
+			expect: true,
+			define: true,
+			require: true,
+			requirejs: true
 		}
 	},
 	watch: {
@@ -29,8 +34,9 @@ module.exports = function(grunt) {
 		tasks: 'test'
 	},
 	jasmine: {
-		src: [ 'www/**/*.js', '!www/js/spec/**/*.spec.js' ],
+		src: [ '!www/js/spec/**/*.spec.js' ],
 		options: {
+			template: require('grunt-template-jasmine-requirejs'),
 			specs : 'www/js/spec/**/*.spec.js'
 		}
 	},
@@ -51,16 +57,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-linter');
-	grunt.loadNpmTasks('grunt-volo');
 
 	// Default task
 	grunt.registerTask('default', ['test_syntax','min_code','test_tdd']);
 
 	// Custom tasks
 	grunt.registerTask('test', ['test_syntax','test_tdd']);
-
-	// Resolve and get deps.
-	grunt.registerTask('get_deps', ['volo:install']);
 
 	grunt.registerTask('test_syntax', ['linter']);
 	grunt.registerTask('test_tdd', ['jasmine']);
