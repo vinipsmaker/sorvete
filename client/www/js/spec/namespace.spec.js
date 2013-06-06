@@ -12,33 +12,19 @@ require.config({
 	}
 });
 
-describe("A false case", function() {
+xdescribe("A false case", function() {
 	it("canot be true", function() {
-		expect(true).toBe(true);
+		expect(false).toBe(true);
 	});
 });
 
 require(["Sorvete"],
 function (Sorvete) {
-//require(function () {
-//require( function () {
-
-//var Sorvete=require("Sorvete");
-console.log("OPA");
 
 describe("Testes do namespace", function() {
 	it("Tem que poder contruir o objeto", function() {
-//		expect(new Sorvete() ).not.toBe(undefined);
+//		expect( new Sorvete() ).not.toBe(undefined);
 	});
 });
-
-describe("Testes 2", function() {
-	it("Sera que vai", function() {
-		expect( true ).toBe(true);
-	});
-});
-
-console.log("SAIU OPA");
-
 });
 
