@@ -100,6 +100,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('test_syntax', ['linter']);
 	grunt.registerTask('test_tdd', ['jasmine']);
-	grunt.registerTask('min_code', ['requirejs']);
+//	grunt.registerTask('min_code', ['requirejs']);
+	grunt.registerTask('min_code', []);
 };
 
