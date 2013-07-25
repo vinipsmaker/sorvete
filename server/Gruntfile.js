@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 				'www/js/<%= pkg.name %>.min.js': [ 'www/js/sorvete/**/*.js' ]
 			}
 		}
-	} 
+	}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
@@ -66,6 +66,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('test_syntax', ['linter']);
 	grunt.registerTask('test_tdd', ['jasmine']);
-	grunt.registerTask('min_code', ['requirejs']);
+//	grunt.registerTask('min_code', ['requirejs']);
+	grunt.registerTask('min_code',[]);
 };
 
